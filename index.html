@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Countdown Timer</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./style.css">
+  <script src="./script.js" defer></script>
+</head>
+<body>
+    <div class="card">
+      <div class="title">
+        <b>Countdown Timer</b>
+       </div>
+       <br>
+        <h2><b>Set date/time :</b></h2>
+          <input type="text" placeholder="yyyy-mm-dd   00:00:00" id="endtime" value="">
+          <br>
+          <br> 
+        <button class="btn btn__submit" id="start-count">Start Countdown</button>
+
+        <br>
+        <br>
+
+
+        <h1><b>Countdown :</b> </h1>
+        <div class="countdown-content">
+          <div class="box">
+         
+          <span class="num" id="day"></span> 
+          <span class="text"><b>Days</b></span>
+         </div> 
+         <div class="box">
+          <span class="num" id="hour"></span> 
+          <span class="text"><b>Hours</b></span>
+        </div>
+          <div class="box">
+          <span class="num" id="minute"></span> 
+          <span class="text"><b>Minutes</b></span>
+        </div>
+          <div class="box">
+          <span class="num" id="second"></span> 
+          <span class="text"><b>Seconds</b></span>
+        </div>
+
+        </div> 
+        <div class="credits">Created by Akshata <br>
+          <a target="_blank" rel="noopener no referrer" href="https://github.com/chawanakshata/Countdown-Timer">
+            <img alt="github" src="./images/github.png" height="30px" width="30px">
+          </a>
+        </div>
+      </div>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.7.0/vanilla-tilt.min.js"></script>
+      <script>
+        VanillaTilt.init(document.querySelectorAll(".btn__submit"), {
+        max: 4,
+        speed: 800,
+        scale: 1.03,
+        glare: true,
+        "max-glare": 0.5,
+      });
+      </script>
+</body>
+</html>
